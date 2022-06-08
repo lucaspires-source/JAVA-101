@@ -1,15 +1,16 @@
-import java.util.Scanner;
+
 
 public class Main {
    public static void main(String[] args) {
-   int temperature = 22;
-   boolean isWarm =  temperature > 20 && temperature < 28;
-   System.out.println(isWarm);
+      int temperature = 22;
 
-   boolean hasHighIncome = true;
-   boolean hasGoodCredit = true;
-   boolean  hasCriminalRecord = true;
-   boolean isEligible = (hasHighIncome || hasGoodCredit) && !hasCriminalRecord;
-   System.out.println(isEligible);
+      if(temperature > 30) {
+         System.out.println("It's a hot day");
+         System.out.println("Drink a lot of Water");
+      } else if ( temperature <= 30 && temperature >= 20 ) {
+         System.out.println("It is a nice day");
+      } else {
+         System.out.println("It is code");
+      }
  }
 }
