@@ -2,14 +2,14 @@ import java.util.Scanner;
 
 public class Main {
    public static void main(String[] args) {
-   int x = 1;
-   int y = 1;
+   int temperature = 22;
+   boolean isWarm =  temperature > 20 && temperature < 28;
+   System.out.println(isWarm);
 
-   System.out.println(x == y);
-   System.out.println( x != y);
-   System.out.println(x > y);
-   System.out.println( x < y);
-   System.out.println(x >= y);
-   System.out.println( x <= y);
+   boolean hasHighIncome = true;
+   boolean hasGoodCredit = true;
+   boolean  hasCriminalRecord = true;
+   boolean isEligible = (hasHighIncome || hasGoodCredit) && !hasCriminalRecord;
+   System.out.println(isEligible);
  }
 }
